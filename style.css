@@ -1,0 +1,504 @@
+/* 変数の定義（トーンカラー） */
+:root {
+    --color-primary: #5B92E5; /* ライトブルーをベースに */
+    --color-secondary: #D4B892; /* サンドベージュ */
+    --color-white: #FFFFFF;
+    --color-text-dark: #333333;
+    --color-bg-light: #F8F8F8; /* 薄い背景色 */
+}
+
+/* 全体設定 */
+body {
+    font-family: 'Noto Sans JP', sans-serif; /* 丸ゴシックに近いフォント */
+    color: var(--color-text-dark);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-white);
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* ヒーローセクション（ファーストビュー） */
+.hero-section {
+    background-color: var(--color-primary); /* ライトブルーの背景 */
+    color: var(--color-white);
+    padding: 100px 0;
+    /* 実際はここに背景画像（ジブリ風タッチのイラスト）を設定します */
+    /* background-image: url('hero-image.jpg'); */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-title {
+    font-size: 3.0em;
+    margin: 0.2em 0;
+}
+
+.sub-caption {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+/* CTAボタンのスタイル */
+.cta-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 30px; /* 丸みのあるデザイン */
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button.primary {
+    background-color: #FFC107; /* 目立つ色（例：オレンジ系） */
+    color: var(--color-text-dark);
+}
+
+.cta-button.primary:hover {
+    background-color: #FFA000;
+}
+
+/* 背景色設定 */
+.bg-light-blue {
+    background-color: #E6F0FF; /* 薄いライトブルー */
+}
+
+/* フッター */
+.footer {
+    padding: 20px;
+    background-color: var(--color-text-dark);
+    color: var(--color-white);
+    font-size: 0.9em;
+}
+
+/* 課題提起セクション */
+.problem-section h2 {
+    color: var(--color-primary);
+    margin-bottom: 40px;
+}
+
+.problem-intro {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.problem-points {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.point-item {
+    flex: 1;
+    background-color: var(--color-bg-light);
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.point-item .icon {
+    display: block;
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.point-item p {
+    font-weight: 700;
+    text-align: center;
+}
+
+.crisis-message {
+    font-size: 1.3em;
+    color: #CC0000; /* 危機感を出すための強調色 */
+    font-weight: 700;
+    background-color: #FFF0F0;
+    border: 3px solid #FFCCCC;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+/* コンセプトセクション */
+.concept-section h2 {
+    color: var(--color-text-dark);
+}
+
+.concept-box {
+    background-color: var(--color-white);
+    border: 5px solid var(--color-secondary); /* サンドベージュの枠線 */
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.concept-box h3 {
+    color: var(--color-primary);
+    font-size: 1.5em;
+    margin-top: 0;
+    border-bottom: 2px dashed var(--color-secondary);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.concept-box p {
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.target-text {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 20px;
+    color: var(--color-primary);
+}
+
+/* 共通タイトルスタイル */
+.section-title {
+    font-size: 2em;
+    color: var(--color-primary);
+    border-bottom: 3px solid var(--color-secondary);
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 1.1em;
+    margin-bottom: 50px;
+}
+
+/* 提供プログラム詳細セクション */
+.program-detail-section {
+    background-color: var(--color-white);
+}
+
+.program-block {
+    text-align: left;
+    margin-bottom: 40px;
+    padding: 25px;
+    border: 1px solid #EEEEEE;
+    border-radius: 8px;
+}
+
+.program-block h3 {
+    color: var(--color-text-dark);
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.workshop-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.workshop-list li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="%235B92E5" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8.01l-9 9z"/></svg>') no-repeat left 5px;
+    background-size: 16px 16px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.bg-light-gray {
+    background-color: var(--color-bg-light);
+}
+
+.image-placeholder {
+    background-color: #E0E0E0;
+    color: #666;
+    text-align: center;
+	border-radius: 10px;
+}
+
+/* メリットセクション */
+.benefit-table {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.benefit-column {
+    flex: 1;
+    background-color: var(--color-white);
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.benefit-column h3 {
+    text-align: center;
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 10px;
+}
+
+.benefit-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefit-column li {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    /* チェックマークの絵文字 */
+    padding-left: 30px;
+    text-indent: -20px;
+}
+
+.core-skill-message {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-top: 50px;
+    border-top: 2px dashed var(--color-primary);
+    padding-top: 20px;
+}
+
+/* 料金プランセクション */
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.card {
+    flex: 0 0 300px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-bg-light);
+    position: relative;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    color: var(--color-primary);
+    margin-top: 0;
+}
+
+.price-value {
+    font-size: 1.2em;
+    margin: 15px 0;
+    color: var(--color-text-dark);
+}
+
+.price-large {
+    font-size: 2.5em;
+    font-weight: 500;
+    color: #FF7700; /* 目立つオレンジ */
+}
+
+.price-detail {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card .cta-button {
+    width: 80%;
+    margin-top: 20px;
+    box-shadow: none;
+}
+
+.card.highlight-card {
+    border: 3px solid var(--color-primary);
+    background-color: var(--color-white);
+    transform: scale(1.05); /* 強調 */
+}
+
+.card .ribbon {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #FF0077;
+    color: var(--color-white);
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: 700;
+    transform: rotate(5deg);
+}
+
+.note-text {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 30px;
+}
+
+/* CTA & まとめセクション */
+.cta-section {
+    background-color: var(--color-secondary); /* サンドベージュの背景 */
+    color: var(--color-text-dark);
+    padding: 80px 0;
+}
+
+.cta-heading {
+    font-size: 2.5em;
+    color: var(--color-text-dark);
+    margin-bottom: 20px;
+}
+
+.cta-message {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.large-cta {
+    padding: 20px 60px;
+    font-size: 1.4em;
+    border-radius: 40px;
+}
+
+.cta-button.secondary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.cta-button.secondary:hover {
+    background-color: #4A7FD3;
+}
+
+/* ========================================= */
+/* 📱 スマートフォン/タブレット最適化 (Media Query) */
+/* 画面幅が768px以下のデバイスに適用 */
+/* ========================================= */
+@media (max-width: 768px) {
+
+    /* 全体的な調整 */
+    .section {
+        padding: 40px 0; /* セクションの上下の余白を減らす */
+    }
+
+    .container {
+        padding: 0 15px; /* 左右のパディングを適度に確保 */
+    }
+
+    /* ヒーローセクション */
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .main-title {
+        font-size: 2.0em; /* メインタイトルを小さく */
+    }
+
+    .sub-caption {
+        font-size: 1.0em;
+    }
+
+    .cta-button {
+        padding: 12px 30px;
+        font-size: 1.1em;
+    }
+
+    /* 課題提起セクション */
+    .problem-section h2 {
+        font-size: 1.5em;
+    }
+    
+    .problem-points {
+        flex-direction: column; /* 3つの要素を縦に並べる */
+        gap: 20px;
+    }
+
+    .point-item {
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .crisis-message {
+        font-size: 1.1em;
+    }
+
+    /* プログラム詳細セクション */
+    .section-title {
+        font-size: 1.6em;
+    }
+
+    /* メリットセクション */
+    .benefit-table {
+        flex-direction: column; /* 2つのカラムを縦に並べる */
+        gap: 20px;
+    }
+
+    .benefit-column {
+        padding: 20px 15px;
+    }
+
+    .core-skill-message {
+        font-size: 1.1em;
+    }
+
+    /* 料金プランセクション */
+    .pricing-cards {
+        flex-direction: column; /* 2枚のカードを縦に並べる */
+        gap: 30px;
+        align-items: center; /* 中央揃え */
+    }
+
+    .card {
+        flex: 0 0 90%; /* カードの幅を広げる */
+        max-width: 350px;
+    }
+
+    .card.highlight-card {
+        transform: scale(1.0); /* 強調による拡大を解除 */
+    }
+
+    .price-large {
+        font-size: 2.2em;
+    }
+
+    /* CTAセクション */
+    .cta-heading {
+        font-size: 1.8em;
+    }
+
+    .cta-message {
+        font-size: 1.1em;
+    }
+
+    .large-cta {
+        padding: 15px 40px;
+        font-size: 1.2em;
+    }
+}
