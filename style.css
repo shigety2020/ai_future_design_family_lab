@@ -92,6 +92,7 @@ h1, h2, h3 {
     background-color: var(--color-text-dark);
     color: var(--color-white);
     font-size: 0.9em;
+	text-align: center;
 }
 
 /* 課題提起セクション */
